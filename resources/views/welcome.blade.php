@@ -46,16 +46,16 @@
 
             <div class="col-sm">
                 <div class="list-group mt-3">
-                    @foreach($posts as $post)
+                    @foreach($users as $user)
                         <div class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">{{ data_get($post, 'firstName') . ' ' . data_get($post, 'lastName') }} ({{ data_get($post, 'age') }})</h5>
+                                <h5 class="mb-1">{{ data_get($user, 'firstName') . ' ' . data_get($user, 'lastName') }} ({{ data_get($user, 'age') }})</h5>
                             </div>
                             <p class="mb-1">
-                                {{ data_get($post, 'email') }}
+                                {{ data_get($user, 'email') }}
                             </p>
                             <small>
-                                {{ data_get($post, 'location') }}
+                                {{ data_get($user, 'location') }}
                             </small>
                         </div>
                     @endforeach

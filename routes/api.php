@@ -18,4 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('/single/create', 'APIController@createSingleRecord');
 Route::post('/create', 'APIController@createRecord');
