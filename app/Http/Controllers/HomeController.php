@@ -28,7 +28,7 @@ class HomeController extends Controller
             'email'
         ];
         $users = Sheets::collection($header, $sheets);
-        $users = $users->reverse()->take(10);
+        $users = $users->reverse();
         return view('welcome')->with(compact('users'));
     }
 }

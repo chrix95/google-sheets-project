@@ -49,13 +49,16 @@
                     @foreach($users as $user)
                         <div class="list-group-item list-group-item-action">
                             <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">{{ data_get($user, 'firstName') . ' ' . data_get($user, 'lastName') }} ({{ data_get($user, 'age') }})</h5>
+                                <h5 class="mb-1">
+                                    <strong>Name: </strong>{{ data_get($user, 'firstName') . ' ' . data_get($user, 'lastName') }}
+                                </h5>
+                                <span style="float: right">({{ data_get($user, 'age') }})</span>
                             </div>
                             <p class="mb-1">
-                                {{ data_get($user, 'email') }}
+                                <strong>Email: </strong>{{ data_get($user, 'email') }}
                             </p>
                             <small>
-                                {{ data_get($user, 'location') }}
+                                <strong>Location: </strong>{{ data_get($user, 'location') }}
                             </small>
                         </div>
                     @endforeach
