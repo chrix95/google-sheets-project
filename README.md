@@ -58,4 +58,5 @@ Two endpoint exist,
 - Single Information Upload &
 - Multiple Information Upload (This can also be used to upload a single information)
 
+###### Click <a href="https://docs.google.com/spreadsheets/d/1DcTLhTyifdNayqMw4H1odX8jRCg0Gl-qdm2DEYlaVtI/edit?usp=sharing">here</a> to see the google sheet
 ###### Click <a href="https://www.getpostman.com/collections/e25c90504c4fed110686">here</a> to import the postman collection
